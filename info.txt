@@ -1,0 +1,34 @@
+# Run Ai Server 
+
+ PYTHONWARNINGS="ignore::FutureWarning" python custom_ml_studio.py --port 5053 --debug --model yolov5n.pt #Custom Model 
+
+
+# Then Run Nvr Server 
+
+python nvr-app.py
+
+
+# Custom ml For DVR/nvr INTEGRATION 
+
+python ml-nvr.py
+
+
+
+# Dependencies 
+Ubuntu 20.04/22.04
+
+NVIDIA DRIVER : - 550
+
+cUDA :-- 12.4
+
+NVCC :-- 12.4
+
+ENVIREMENT = python 3.10
+
+Pytorch #must be GPU Supported 
+
+Tensorflow
+
+# Integration 
+
+http://192.168.100.166:5000/video_feed?rtsp_url=rtsp://admin:admin@123@192.168.100.11:554/1/1?transmode=unicast&profile=va
